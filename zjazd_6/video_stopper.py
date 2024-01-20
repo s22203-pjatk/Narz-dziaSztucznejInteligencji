@@ -18,8 +18,8 @@ from PIL import Image, ImageTk
 pygame.mixer.init()
 
 """ Load face and eye cascade classifiers """
-faceCascade = cv2.CascadeClassifier("cascade/haarcascade_frontalface_default.xml")
-eyeCascade = cv2.CascadeClassifier("cascade/haarcascade_eye.xml")
+faceCascade = cv2.CascadeClassifier("haarcascade_frontalface_default.xml")
+eyeCascade = cv2.CascadeClassifier("haarcascade_eye.xml")
 
 """ Variables to track consecutive eye states and set thresholds """
 cap = cv2.VideoCapture(0)
@@ -53,7 +53,7 @@ status_label.pack()
 
 
 def play_unpleasant_sound():
-    pygame.mixer.music.load("sound/siren.mp3")
+    pygame.mixer.music.load("siren.mp3")
     pygame.mixer.music.play(-1)
 
 
