@@ -1,4 +1,4 @@
-# NAI LAB 7
+# NAI LAB 6
 
 ## Creators Alan Berg, Tomasz Fidurski
 
